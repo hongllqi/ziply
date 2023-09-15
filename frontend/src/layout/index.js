@@ -25,8 +25,6 @@ import { AuthContext } from "../context/Auth/AuthContext";
 import BackdropLoading from "../components/BackdropLoading";
 import { i18n } from "../translate/i18n";
 
-import ZiplyLogo from "../assets/Logo V1.png";
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -180,11 +178,6 @@ const LoggedInLayout = ({ children }) => {
       >
         <div className={classes.toolbarIcon}>
           <IconButton onClick={() => setDrawerOpen(!drawerOpen)}>
-            <Image
-              source={{
-                uri: {ZiplyLogo},
-              }}
-            />
             <ChevronLeftIcon />
           </IconButton>
         </div>
