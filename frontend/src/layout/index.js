@@ -25,6 +25,8 @@ import { AuthContext } from "../context/Auth/AuthContext";
 import BackdropLoading from "../components/BackdropLoading";
 import { i18n } from "../translate/i18n";
 
+import LogoV1 from "../assets/Logo V1.png";
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -177,7 +179,10 @@ const LoggedInLayout = ({ children }) => {
         open={drawerOpen}
       >
         <div className={classes.toolbarIcon}>
-          <IconButton onClick={() => setDrawerOpen(!drawerOpen)}>
+          <img src={LogoV1} style={{ height: 50 }} />
+          <IconButton onClick={() => {
+              setDrawerOpen(!drawerOpen);
+            }}>
             <ChevronLeftIcon />
           </IconButton>
         </div>
@@ -217,7 +222,7 @@ const LoggedInLayout = ({ children }) => {
             noWrap
             className={classes.title}
           >
-            WhaTicket teste
+            {`Olá ${user?.name}, seja bem vindo!`}
           </Typography>
           {user.id && <NotificationsPopOver />}
 
