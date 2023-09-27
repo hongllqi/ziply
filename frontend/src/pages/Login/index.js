@@ -23,6 +23,8 @@ import { i18n } from "../../translate/i18n";
 
 import { AuthContext } from "../../context/Auth/AuthContext";
 
+import LogoV1 from "../../assets/Logo V1.png";
+
 // const Copyright = () => {
 // 	return (
 // 		<Typography variant="body2" color="textSecondary" align="center">
@@ -78,7 +80,8 @@ const Login = () => {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
-          <LockOutlined />
+          {/* <LockOutlined /> */}
+          <img src={LogoV1} style={{ height: 50 }} />
         </Avatar>
         <Typography component="h1" variant="h5">
           {i18n.t("login.title")}

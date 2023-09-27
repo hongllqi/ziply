@@ -178,7 +178,7 @@ const LoggedInLayout = ({ children }) => {
         }}
         open={drawerOpen}
       >
-        <div className={classes.toolbarIcon}>
+        <div className={classes.toolbarIcon} style={{backgroundColor: '#331B5C'}}>
           <img src={LogoV1} style={{ height: 50 }} />
           <IconButton onClick={() => {
               setDrawerOpen(!drawerOpen);
