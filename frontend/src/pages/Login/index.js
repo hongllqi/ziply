@@ -79,10 +79,10 @@ const Login = () => {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          {/* <LockOutlined /> */}
-          <img src={LogoV1} style={{ height: 50 }} />
-        </Avatar>
+        {/* <Avatar className={classes.avatar}>
+          <LockOutlined />
+        </Avatar> */}
+        <img src={LogoV1} style={{ height: 50 }} />
         <Typography component="h1" variant="h5">
           {i18n.t("login.title")}
         </Typography>
